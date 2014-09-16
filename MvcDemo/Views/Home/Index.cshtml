@@ -1,0 +1,33 @@
+﻿@model MvcDemo.Controllers.HomeController.MessageViewModel
+@{
+    ViewBag.Title = "Contact us";
+}
+
+<div class="container">
+    <h2>@ViewBag.Title</h2>
+    <form role="form" id="frmMessage">
+        <div class="form-group">
+            @Html.LabelFor(x => x.Name)
+            @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "Enter name" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Email)
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Enter email" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Subject)
+            @Html.TextBoxFor(x => x.Subject, new { @class = "form-control", placeholder = "Enter subject" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Message)
+            @Html.TextAreaFor(x => x.Message, new { @class = "form-control", placeholder = "Enter message" })
+        </div>
+        <a href="#" id="btnSend" class="btn btn-default">Submit</a>
+    </form>    
+</div>
+@section Scripts
+{
+    <script>
+        homePage.init();
+    </script>
+}
