@@ -1,6 +1,5 @@
-# asp.net-mvc-and-revealing-module-pattern
+# Revealing module pattern in javascript and ASP.NET MVC
 
-Sample contact form using ASP.NET MVC and js Revealing Module Pattern.
 
 #### Contact Form
 ![contact form](https://raw.github.com/dejancaric/asp.net-mvc-and-revealing-module-pattern/master/github/01.png)
